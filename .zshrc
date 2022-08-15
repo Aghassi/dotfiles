@@ -114,3 +114,4 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # Aliases for common commands which use a different binary under the hood
 alias cat='$(which bat)'
 alias find='$(which fd)'
+alias du='$(which dust)'
