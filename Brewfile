@@ -6,6 +6,7 @@ brew "bat"
 brew "bazelisk"
 brew "docker", link: false
 brew "exa"
+brew "fd"
 brew "guile"
 brew "unbound"
 brew "gnutls"
