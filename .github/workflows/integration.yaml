@@ -1,0 +1,20 @@
+name: Integration Test CI
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.10.0
+        with:
+          access_token: ${{ github.token }}
+      - name: Setup repo
+        # Can't use ssh checkout here without creds
+        run: |
+          git clone https://github.com/Aghassi/dotfiles.git --bare ~/.dotfiles
+          git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config --local status.showUntrackedFiles no
+          git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout "$GITHUB_REF_NAME"
+      - name: Execute full install
+        run: ~/setup.sh
