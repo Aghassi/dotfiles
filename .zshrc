@@ -110,3 +110,8 @@ export NVM_DIR="$HOME/.nvm"
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# Aliases for common commands which use a different binary under the hood
+alias cat='$(which bat)'
+alias grep='$(which rg)'
+alias find='$(which fd)'
