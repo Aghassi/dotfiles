@@ -18,4 +18,4 @@ if [ -z "$BREW_INSTALLED" ]; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-HOMEBREW_BREWFILE=~/.Brewfile brew bundle install --global --no-lock --cleanup
+HOMEBREW_BREWFILE=~/.Brewfile brew bundle install --global --no-lock
