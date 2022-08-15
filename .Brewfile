@@ -7,6 +7,7 @@ tap "homebrew/core"
 brew "bat"
 brew "bazelisk"
 brew "docker", link: false
+brew "dog"
 brew "dust"
 brew "exa"
 brew "fd"
