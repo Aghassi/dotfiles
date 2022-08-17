@@ -19,3 +19,6 @@ if [ -z "$BREW_INSTALLED" ]; then
 fi
 
 HOMEBREW_BREWFILE=~/.Brewfile brew bundle install --global --no-lock
+
+# Install fzf bindings
+$(brew --prefix)/opt/fzf/install
