@@ -12,3 +12,9 @@ git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config --local status.showUntra
 git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout
 ~/setup.sh
 ```
+
+## Development
+
+### Brewfile
+
+To update the `.Brewfile`, run `brew bundle dump --file=~/.Brewfile --force`
